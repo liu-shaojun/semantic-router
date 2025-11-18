@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import styles from './PlaygroundPage.module.css'
 
 const PlaygroundPage: React.FC = () => {
-  const [openWebUIUrl] = useState('http://localhost:3001')
+  // const [openWebUIUrl] = useState('http://localhost:3001')
+  const [openWebUIUrl] = useState('/embedded/openwebui/')
   const [currentUrl, setCurrentUrl] = useState('')
 
   // Auto-load on mount

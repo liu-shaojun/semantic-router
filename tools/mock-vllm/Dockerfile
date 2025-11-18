@@ -1,5 +1,6 @@
 FROM python:3.11-slim
-
+ENV http_proxy=http://proxy.iil.intel.com:911
+ENV https_proxy=http://proxy.iil.intel.com:911
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
